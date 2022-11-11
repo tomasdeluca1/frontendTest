@@ -1,0 +1,36 @@
+@media (min-width:0) {
+    .userInfo{
+        display: flex;
+        
+        margin: 0px 10%;
+        padding: 5px;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        border: 1px darkblue solid;
+    }
+    .info{
+        width: 30%;
+    }
+}
+
+@media (min-width: 756px) {
+    .userInfo{
+        flex-direction: row;
+    }
+    .infoId{
+        width: 3%;
+    }
+    .infoUsername{
+        width: 14%;
+    }
+    .infoNodeId{
+        width: 14%;
+    }
+    .infoUrl{
+        width: 33%;
+    }
+    .infoAvatar{
+        width: 33%;
+    }
+}
