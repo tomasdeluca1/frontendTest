@@ -1,8 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import UserListContainter from "./components/UserListContainter/UserListContainter";
 import NavBarSearch from "./components/NavBarSearch/NavBarSearch";
-import UserDetail from "./components/UserDetail/UserDetail";
+import UserDetailContainer from "./components/UserDetailContainer/UserDetailContainer";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -11,9 +12,26 @@ function App() {
       <BrowserRouter>
         <NavBarSearch />
         <Routes>
-          <Route path="/" element={<ItemListContainer />} />
-          <Route path="/userDetail/:userLogin" element={<UserDetail />} />
+          <Route path="/" element={<UserListContainter />} />
+          <Route
+            path="/userDetail/:userLogin"
+            element={<UserDetailContainer />}
+          />
+          <Route path="*" element={<h1>404 NOT FOUND</h1>} />
         </Routes>
+        <footer style={{ paddingBottom: "20px" }}>
+          Created by{" "}
+          <a
+            href="huevsite.vercel.app"
+            style={{
+              textDecoration: "none",
+              color: "white",
+              fontWeight: "600",
+            }}
+          >
+            Huevsite™
+          </a>
+        </footer>
       </BrowserRouter>
     </div>
   );
