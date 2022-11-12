@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Pagination.css";
 
 const Pagination = ({ since, setSince }) => {
   const [page, setPage] = useState(1);
@@ -18,14 +19,20 @@ const Pagination = ({ since, setSince }) => {
   return (
     <div className="pagination">
       <div className="paginationBox">
-        {since !== 0 && <button onClick={handleOnSubtract}>Previous</button>}
+        {since !== 0 && (
+          <button onClick={handleOnSubtract} className="paginationButton">
+            Previous
+          </button>
+        )}
       </div>
       <div className="paginationBox">
         <p>Page {page}</p>
       </div>
       <div className="paginationBox">
         {" "}
-        <button onClick={handleOnAdd}>Next</button>
+        <button onClick={handleOnAdd} className="paginationButton">
+          Next
+        </button>
       </div>
     </div>
   );
