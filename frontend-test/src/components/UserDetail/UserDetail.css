@@ -1,0 +1,71 @@
+@media (min-width:0) {
+    .userDetailBox{
+        width: 100%;
+    }
+    .userDetailImg{
+width: 50%;
+margin: 10px 25%;
+    }
+    .userImg{
+width: 100%;
+border-radius: 50%;
+border: 2px white solid;
+box-shadow: 0px 0px 20px 2px rgb(255, 255, 255, 0.2);
+    }
+    .userDetailDivContainer{
+        
+        width: 90%;
+        padding: 20px 5%;
+        border-bottom: 1px solid white;
+    }
+    .userDetailElement{
+width: 50%;
+text-align: left;
+font-weight: 600;
+    }
+    .userDetailInfo{
+        width: 50%;
+        text-align: left;
+        color: white;
+    }
+    .userDetailInfo a{
+        color: white;
+    }
+    .userDetailInfo a:hover{
+        color: #000eee;
+    }
+    .detailsContainer{
+       width: 100%;
+    }
+    .repoContainer{
+        width: 80%;
+        padding: 10px 0;
+        margin: 20px 10%;
+        border-radius: 1rem;
+        border: 1px solid white;
+        color: white;
+    }
+    .repoDetailDivContainer{
+        width: 100%;
+    }
+    .repoDetailElement{
+        padding: 10px 20px;
+text-align: left;
+    }
+    .repoLink{
+font-size: 0.7rem;
+color: rgb(52, 157, 226);
+    }
+    .repoSectionTitle{
+        margin: 50px 0 30px 0;
+    }
+}
+
+@media (min-width:756px) {
+    .repoLink{
+        font-size: 1rem;
+    }
+    .userImg{
+        width: 50%;
+        border-radius: 50%;}
+}
