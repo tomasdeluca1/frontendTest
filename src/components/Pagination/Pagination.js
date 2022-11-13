@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./Pagination.css";
 
 const Pagination = ({ since, setSince }) => {
   const [page, setPage] = useState(1);

@@ -35,9 +35,10 @@ const UserDetailContainer = () => {
   console.log(repos);
   return (
     <div>
+      {/* <h2 className="repoSectionTitle">User profile</h2> */}
       <UserDetail {...user} />
       <h2 className="repoSectionTitle">Public repositories</h2>
-      <div style={{ padding: " 0 0 30px 0 " }}>
+      <div className="reposFlex">
         {repos.map((repo) => (
           <UserPublicRepos key={repo.id} {...repo} />
         ))}

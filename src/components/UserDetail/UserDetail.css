@@ -9,11 +9,12 @@ margin: 10px 25%;
     .userImg{
 width: 100%;
 border-radius: 50%;
+margin-top: 40px;
 border: 2px white solid;
 box-shadow: 0px 0px 20px 2px rgb(255, 255, 255, 0.2);
     }
     .userDetailDivContainer{
-        
+        font-size: 1rem;
         width: 90%;
         padding: 20px 5%;
         border-bottom: 1px solid white;
@@ -38,34 +39,72 @@ font-weight: 600;
        width: 100%;
     }
     .repoContainer{
-        width: 80%;
+        width: 90%;
         padding: 10px 0;
-        margin: 20px 10%;
+        margin: 15px;
         border-radius: 1rem;
         border: 1px solid white;
         color: white;
     }
     .repoDetailDivContainer{
-        width: 100%;
+        width: 90%;
+        font-size: 0.8rem;
     }
     .repoDetailElement{
         padding: 10px 20px;
 text-align: left;
+display: flex;
+/* flex-direction: row; */
+align-items: center;
+flex-wrap: wrap;
+
+
     }
     .repoLink{
-font-size: 0.7rem;
+font-size: 0.8rem;
 color: rgb(52, 157, 226);
     }
     .repoSectionTitle{
         margin: 50px 0 30px 0;
     }
+    .strongTxt{
+        font-weight: 600;
+    }
+    .reposFlex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-@media (min-width:756px) {
-    .repoLink{
+@media (min-width:534px) {
+    .repoContainer{
+        width: 250px;
+    }
+    .repoDetailDivContainer{
+        font-size: 0.8rem;
+    }
+    .userDetailDivContainer{
         font-size: 1rem;
     }
+    .reposFlex{
+        flex-direction: row;
+       flex-wrap: wrap;
+       margin-bottom: 40px;
+    }
+}
+@media (min-width:756px) {
+   
+ .reposFlex{
+    width: 90%;
+    margin: 0 5% 40px 5%;
+ }
+    /* .repoLink{
+        font-size: 1rem;
+    } */
     .userImg{
         width: 50%;
         border-radius: 50%;}
+
 }

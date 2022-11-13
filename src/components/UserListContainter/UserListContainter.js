@@ -34,23 +34,27 @@ const UserListContainter = () => {
   }
   return (
     <div className="flexHome">
-      <table className="tableUsers">
-        <tr className="userInfo">
-          <td className="info">
-            <h4>Id</h4>
-          </td>
-          <td className="info">
-            <h4>Login</h4>
-          </td>
-          <td className="info">
-            <h4>+ info</h4>
-          </td>
-        </tr>
-        <hr></hr>
-        {allUsers.map((usuario) => (
-          <User {...usuario} />
-        ))}
-      </table>
+      <h3 className="homeTextTitle">Git Hub online profiles</h3>
+      <div className="tableUsersBox">
+        <table className="tableUsers">
+          <tr className="userInfo" style={{ borderBottom: "0px solid white" }}>
+            <td className="infoId">
+              <h4>Id</h4>
+            </td>
+            <td className="infoName">
+              <h4>Login</h4>
+            </td>
+            <td className="infoButton">
+              <h4>+ info</h4>
+            </td>
+          </tr>
+          <hr></hr>
+          {allUsers.map((usuario) => (
+            <User {...usuario} />
+          ))}
+        </table>
+      </div>
+
       <Pagination since={since} setSince={setSince} />
     </div>
   );

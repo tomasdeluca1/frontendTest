@@ -3,24 +3,30 @@
         display:none
     }
     .pagination{
-        width: 100%; 
-        margin: 10px 0 70px 0; 
+        width: 76%;
+        margin: 10px 12% 70px 12%;
+       
         align-items: center; justify-content: space-between;  display: flex;
     }
     .paginationBox{
-        width: 33%;
+        width:25%;
     }
     .paginationButton{
+        width: 100%;
         color: #2b2b2b;
-        background-color: white;
-        border: white 1px solid;
-        padding: 5px 15px;
+        background-color: #282c34;
+        border: white 0.5px solid;
+        color: white;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       padding:5px 0;
         border-radius: 0.5rem;
         cursor: pointer;
     }
     .paginationButton:hover{
-        background-color: #2b2b2b;
-        color: white;
+        color: #2b2b2b;
+        background-color: white;
        
         
     }

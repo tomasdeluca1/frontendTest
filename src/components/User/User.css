@@ -2,36 +2,97 @@
     .userInfo{
         display: flex;
         
-        padding: 5px;
-        margin: 10px 0 ;
+        padding: 8px;
+        margin: 4px 0 ;
         align-items: center;
         justify-content: space-around;
-      
+        border-bottom: 0.5px solid rgb(255, 255, 255, 0.5);
      
     }
-    .info{
-        width: 30%;
+    .homeTextTitle{
+        font-size: 1.1rem;
+        margin: 40px 0 10px 0;
     }
-    .info a{
+    h3{
+        margin: 0;
+    }
+    hr{
+        margin:0}
+    .infoId{
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .infoName{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .infoButton{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .infoButton a{ 
+        width: 65%;
+        height: 30px;
+        padding: 3px 5px;
         text-decoration: none;
-        color: white;
-        padding: 3px 15px;
+        color: #282c34;       
+    }
+    .infoButton a:hover .detailButton{
+        background-color: #282c34;
+       color: white;
+        box-shadow: inset 0px 0px 8px 2px rgb(255, 255, 255,0.3);;
+    }
+    .detailButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border:solid 1px white ;
         border-radius: 0.5rem;
-    }
-    .info a:hover{
-       color: #2b2b2b;
-        background-color: white;
-        
+         width: 100%;
+        background-color: rgb(210, 210, 210);
+        height: 30px;
     }
     .tableUsers{
+        width: 100%
+    }
+    .tableUsersBox{
         width: 80%;
-        margin: 10px 10% 10px 10%;
+        margin: 20px 10%;
         border-radius: 1rem;
         border: 1px white solid;
     }
 }
 
 @media (min-width: 756px) {
-   
+    .infoButton a{ 
+        width: 50%;
+        padding: 3px 15px;  
+    }
+    .homeTextTitle{
+        font-size: 1.3rem;
+    }
+    .infoId {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .infoName{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .infoButton{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
