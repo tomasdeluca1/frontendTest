@@ -1,13 +1,12 @@
 @media (min-width:0) {
     .userInfo{
         display: flex;
-        
-        padding: 8px;
-        margin: 4px 0 ;
+        box-shadow: inset 0px -5px 11px 0px rgb(255 255 255 / 10%);
+        padding: 4px;
         align-items: center;
         justify-content: space-around;
+        border-top: 0.5px solid rgb(255, 255, 255, 0.5);
         border-bottom: 0.5px solid rgb(255, 255, 255, 0.5);
-     
     }
     .homeTextTitle{
         font-size: 1.1rem;
@@ -55,21 +54,29 @@
         border:solid 1px white ;
         border-radius: 0.5rem;
          width: 100%;
-        background-color: rgb(210, 210, 210);
+         box-shadow: inset 0px 0px 8px 100px rgb(255, 255, 255,1);;
         height: 30px;
+        transition: all 0.2s;
     }
     .tableUsers{
         width: 100%
     }
     .tableUsersBox{
-        width: 80%;
-        margin: 20px 10%;
+        width: 90%;
+        margin: 20px 5%;
         border-radius: 1rem;
         border: 1px white solid;
     }
 }
 
 @media (min-width: 756px) {
+    .tableUsersBox{
+        width: 80%;
+        margin: 20px 10%;
+    }
+    .userInfo{
+        padding: 10px;
+    }
     .infoButton a{ 
         width: 50%;
         padding: 3px 15px;  

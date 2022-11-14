@@ -33,6 +33,7 @@ margin-bottom: 10px;
     margin: 10px;
 }
 .searchInput{
+    height: 3vh;
     width: 98%;
 background-color: #2b2b2b;
 border: white 1px solid;
@@ -42,8 +43,10 @@ padding: 7px 0 7px 1%;
 
 }
 .searchButton{
-margin-left: -45px;
-background-color: white;
+    width: 70px;
+margin-left: -77px;
+height: 2.9vh;
+/* background-color: white; */
 color: #2b2b2b;
 border-radius: 0.2rem;
 border: white 1px solid;
@@ -90,13 +93,9 @@ border-radius: 0.5rem;
         justify-content: space-between;
     }
 .navBarLogo{
-    width: 20%;
+    width: 150px;
 }
-/* .gitHubLogo{
-    padding: 0;
-    width: 25%;
-    
-} */
+
 .navBarLink{
 display: block;
 }

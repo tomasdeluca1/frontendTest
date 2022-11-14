@@ -37,7 +37,14 @@ const UserListContainter = () => {
       <h3 className="homeTextTitle">Git Hub online profiles</h3>
       <div className="tableUsersBox">
         <table className="tableUsers">
-          <tr className="userInfo" style={{ borderBottom: "0px solid white" }}>
+          <tr
+            className="userInfo"
+            style={{
+              borderTop: "0px solid white",
+              borderBottom: "0px solid white",
+              boxShadow: " 0px 0px 0px 0px",
+            }}
+          >
             <td className="infoId">
               <h4>Id</h4>
             </td>

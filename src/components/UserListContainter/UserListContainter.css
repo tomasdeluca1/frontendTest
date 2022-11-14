@@ -10,6 +10,9 @@
     }
     .paginationBox{
         width:25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .paginationButton{
         width: 100%;
@@ -20,15 +23,15 @@
        display: flex;
        align-items: center;
        justify-content: center;
-       padding:5px 0;
+       padding:7px 0;
         border-radius: 0.5rem;
         cursor: pointer;
+        box-shadow: inset 0px 0px 5px 2px rgb(255, 255, 255, 20%);
+        transition: all 0.3s;
     }
     .paginationButton:hover{
         color: #2b2b2b;
-        background-color: white;
-       
-        
+        box-shadow: inset 0px 0px 5px 100px rgb(255, 255, 255);
     }
     p{
         margin: 0;
@@ -44,5 +47,8 @@
     .listTitles{
         display:block
     }
- 
+    .paginationButton{
+        width: 40%;
+    }
+  
 }
