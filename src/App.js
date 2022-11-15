@@ -3,6 +3,10 @@ import "./App.css";
 import UserListContainter from "./components/UserListContainter/UserListContainter";
 import NavBarSearch from "./components/NavBarSearch/NavBarSearch";
 import UserDetailContainer from "./components/UserDetailContainer/UserDetailContainer";
+import { inject } from "@vercel/analytics";
+
+// Make sure to call this only once in your app
+inject();
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
