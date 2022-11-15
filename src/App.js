@@ -17,17 +17,32 @@ function App() {
             path="/userDetail/:userLogin"
             element={<UserDetailContainer />}
           />
-          <Route path="*" element={<h1>404 NOT FOUND</h1>} />
+          <Route
+            path="*"
+            element={<h1 style={{ height: "100vh" }}>404 NOT FOUND</h1>}
+          />
         </Routes>
-        <footer style={{ paddingBottom: "20px" }}>
+        <footer
+          style={{
+            padding: "10px",
+            borderTop: "1px solid rgb(255,255,255,0.3",
+            position: "fixed",
+            bottom: "0",
+            textAlign: "center",
+            width: "100%",
+            backgroundColor: "#282c34",
+          }}
+          className="footer"
+        >
           Created by{" "}
           <a
-            href="huevsite.vercel.app"
-            style={{
-              textDecoration: "none",
-              color: "white",
-              fontWeight: "600",
-            }}
+            href="https://huevsite.vercel.app"
+            // style={{
+            //   textDecoration: "none",
+            //   color: "white",
+            //   fontWeight: "600",
+            // }}
+            className="huevsite"
           >
             Huevsite™
           </a>

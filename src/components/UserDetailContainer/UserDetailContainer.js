@@ -4,7 +4,8 @@ import UserDetail from "../UserDetail/UserDetail";
 import UserPublicRepos from "../UserPublicRepos/UserPublicRepos";
 
 const UserDetailContainer = () => {
-  const [user, setUser] = useState([]);
+  const [user, setUser] = useState(["s"]);
+  const [notFound, setNotFound] = useState(false);
   const [repos, setRepos] = useState([]);
 
   const { userLogin } = useParams();
@@ -16,9 +17,11 @@ const UserDetailContainer = () => {
       })
       .then((res) => {
         setUser(res);
+        console.log(res);
+        // }
       })
       .catch((error) => {
-        console.log(error);
+        console.log(1);
       });
 
     fetch(`https://api.github.com/users/${userLogin}/repos`)
@@ -32,16 +35,20 @@ const UserDetailContainer = () => {
         console.log(error);
       });
   }, [userLogin]);
-  console.log(repos);
+
+  // console.log(user.message);
+
   return (
     <div>
-      {/* <h2 className="repoSectionTitle">User profile</h2> */}
-      <UserDetail {...user} />
-      <h2 className="repoSectionTitle">Public repositories</h2>
-      <div className="reposFlex">
-        {repos.map((repo) => (
-          <UserPublicRepos key={repo.id} {...repo} />
-        ))}
+      <div>
+        {" "}
+        <UserDetail {...user} />
+        <h2 className="repoSectionTitle">Public repositories</h2>
+        <div className="reposFlex">
+          {repos.map((repo) => (
+            <UserPublicRepos key={repo.id} {...repo} />
+          ))}
+        </div>
       </div>
     </div>
   );

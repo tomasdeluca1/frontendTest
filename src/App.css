@@ -3,6 +3,16 @@
   background-color: #282c34;
   color:white;
 }
+
+
+footer a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700
+}
+footer a:hover{
+  color: rgb(54, 98, 232);
+  }
 h1{
   margin: 0;
 }
@@ -19,7 +29,7 @@ h2{
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+ 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

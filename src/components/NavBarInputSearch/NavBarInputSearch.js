@@ -7,8 +7,11 @@ const NavBarInputSearch = ({ input, setInput, setUser }) => {
         return response.json();
       })
       .then((res) => {
-        // setSearch(true);
-        setUser(res);
+        if (!res.message) {
+          setUser(res);
+        } else {
+          alert("This user doesn't exist.");
+        }
       })
       .catch((error) => {
         console.log(error);
