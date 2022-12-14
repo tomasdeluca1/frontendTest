@@ -13,10 +13,7 @@ const NavBarSearch = () => {
     <div className="navBar">
       <div className="navBarLogo">
         <Link to="/">
-          <img
-            src="https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png"
-            className="gitHubLogo"
-          />
+          <img src="../../../github-logo.png" className="gitHubLogo" />
         </Link>
       </div>
       <NavBarInputSearch input={input} setInput={setInput} setUser={setUser} />
